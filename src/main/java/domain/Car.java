@@ -37,7 +37,7 @@ public class Car {
 
     private void validate(final String name) {
         if (isNameLengthOutOfRange(name)) {
-            throw new IllegalArgumentException("1이상 5이하의 이름을 입력하세요.\n");
+            throw new IllegalArgumentException("1이상 5이하의 이름을 입력하세요.");
         }
     }
 

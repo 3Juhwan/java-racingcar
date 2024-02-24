@@ -70,7 +70,7 @@ class InputViewTest {
 
             // when, then
             assertThatIllegalArgumentException().isThrownBy(inputView::readNumberOfAttempts)
-                    .withMessageContaining("1부터 10 이하의 숫자를 입력하세요.");
+                    .withMessageContaining("숫자를 입력하세요.");
         }
 
         // 음수는 비즈니스 정책으로 View에서 테스트하지 않음

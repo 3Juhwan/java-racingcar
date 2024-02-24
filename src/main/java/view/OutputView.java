@@ -11,7 +11,7 @@ public class OutputView {
     private static final String WINNERS_NAME_DELIMITER = ", ";
 
     public static void printRaceProcess(final List<ResultDto> raceProcess) {
-        System.out.println("\n실행 결과");
+        System.out.println(System.lineSeparator() + "실행 결과");
         raceProcess.forEach(OutputView::printCarsPositionSingleAttempt);
     }
 
@@ -30,7 +30,7 @@ public class OutputView {
     }
 
     public static void printExceptionMessage(final Exception ex) {
-        System.out.println(ex.getMessage());
+        System.out.println(ex.getMessage() + System.lineSeparator());
     }
 
     private static void printCarsPositionSingleAttempt(final ResultDto singleAttemptResult) {

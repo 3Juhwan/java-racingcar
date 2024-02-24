@@ -11,14 +11,14 @@ public class Attempts {
 
     public Attempts(final int numberOfAttempts) {
         if (isNumberOfAttemptsOutOfRange(numberOfAttempts)) {
-            throw new IllegalArgumentException(MIN_ATTEMPTS + "부터 " + MAX_ATTEMPTS + " 이하의 숫자를 입력하세요.\n");
+            throw new IllegalArgumentException(MIN_ATTEMPTS + "이상 " + MAX_ATTEMPTS + " 이하의 숫자를 입력하세요.\n");
         }
 
         this.numberOfAttempts = numberOfAttempts;
     }
 
     public boolean isEnd() {
-        return numberOfAttempts == 0;
+        return numberOfAttempts <= 0;
     }
 
     public void decrease() {
