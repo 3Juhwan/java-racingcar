@@ -42,7 +42,7 @@ public class InputView {
         try {
             Integer.parseInt(text);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("1부터 10 이하의 숫자를 입력하세요.\n");
+            throw new IllegalArgumentException("숫자를 입력하세요.\n");
         }
     }
 
